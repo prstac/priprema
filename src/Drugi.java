@@ -6,9 +6,9 @@ public class Drugi {
         for (int i = 0; i < x; i++) {
             for (int j = 0; j < y; j++) {
                 if((i&1) ==0) {
-                    System.out.printf("*");
+                    System.out.print("*");
                 } else {
-                    System.out.printf("o");
+                    System.out.print("o");
                 }
             }
             System.out.println();
