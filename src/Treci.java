@@ -1,6 +1,4 @@
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 public class Treci {
@@ -11,10 +9,7 @@ public class Treci {
         polaznici.add(new Polaznik(19, "Mara", "Maric"));
         polaznici.add(new Polaznik(21, "Ivica", "Ivic"));
 
-        Collections.sort(polaznici);
-
-        for (Polaznik polaznik : polaznici) {
-            System.out.println(polaznik);
-        }
+        polaznici.sort(Polaznik::compareTo);
+        polaznici.forEach(System.out::println);
     }
 }
